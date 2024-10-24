@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.logo{
+    height: 60px;
+    width:  100px;
+    border-radius: 50%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* background-color: aqua; */
+}
+.navitems{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.nav-btn{
+    padding: 6px;
+    background-color: #e57694;
+    color: #fff;
+}
+.navitems>a:hover{
+    background-color: #e57694;
+    color: #fff;
+}
+#hamburger{
+    display: none;
+}
+.banner-section{
+    background-image: url('./background.avif');
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.food-card{
+    height: 300px;
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+h2{
+    font-size: 1.8em;
+    padding: 10px;
+}
+button{
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    border-color: orangered;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 1em;
+    margin:10px;
+}
+.tele{
+    font-size: 1em;
+
+}
+
+@media screen and (width<=540px) {
+    .navitems{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+        padding: 20px;
+        font-size: 1.5em;
+    }
+    .banner-section{
+        position: relative;
+    }
+    .food-card{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
