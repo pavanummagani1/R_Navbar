@@ -51,8 +51,8 @@ a{
     text-align: center;
     border-radius: 20px;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 100px;
+    right: 100px;
 }
 h2{
     font-size: 1.8em;
